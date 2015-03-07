@@ -1,1 +1,21 @@
-Hello World
+<!DOCTYPE html>
+<html ng-app="meehan">
+  <head>
+    <title>peter meehan</title>
+    <base href="/">
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+    <script type="text/javascript" src="assets/js/frameworks/angular.min.js"></script>
+    <script type="text/javascript" src="assets/js/frameworks/angular-route.min.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+    <script type="text/javascript" src="assets/js/controllers.js"></script>
+  </head>
+  <body>
+  	<div id="navPanel">
+      <a ng-href="/"><img id="profileImg" src="/assets/img/australia.png"/><br></a>
+      <a ng-href="/about">About</a><br>
+      <a ng-href="/links">Links</a><br>
+      <a ng-href="/projects">Projects</a><br>
+    </div>
+    <div ng-view></div>
+  </body>
+</html>
