@@ -10,4 +10,7 @@ angular.module('meehan.controllers', [])
 }])
 .controller('ProjectsController', ['$scope', function($scope) {
 	//filler
+}])
+.controller('DateController', ['$scope', function($scope) {
+	$scope.date = new Date();
 }]);

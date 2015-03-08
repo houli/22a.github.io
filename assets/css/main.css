@@ -9,6 +9,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* ________PAGE CONTENT________ */
 #wrap {
   width: 1000px;
   overflow: hidden;
@@ -48,6 +49,21 @@ body {
   background-color: #f98030;
 }
 
+/* ________LINK CLASSES________ */
+.miscLink {
+  text-decoration: none;
+  background-image: -webkit-linear-gradient(90deg, #247ff2, #97a5ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.miscLink:visited {
+  text-decoration: none;
+}
+.miscLink:hover {
+  border-bottom: 1px solid #97a5ff;
+  text-decoration: none;
+}
+
 .navLink {
   text-decoration: none;
 }
@@ -59,6 +75,7 @@ body {
   text-decoration: none;
 }
 
+/* ________STYLING________ */
 .header {
   font-size: 36px;
   padding-left: 50px;
