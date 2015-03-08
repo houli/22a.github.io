@@ -6,3 +6,58 @@ body {
   padding: 0px;
   font-size: 24px;
 }
+
+#wrap {
+  width: 1000px;
+  overflow: hidden;
+/*  margin-left: auto;
+  margin-right: auto;*/
+}
+
+#navPanel {
+  float: left;
+  text-decoration: none;
+  width: 140px;
+  padding: 10px;
+  background-color: #eee;
+  border-radius: 4px;
+  -webkit-transition: all .2s ease-in-out;
+       -o-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+}
+
+#content {
+  overflow: hidden;
+  padding: 10px;
+}
+
+#profileImg {
+  height: 128px;
+  width: 128px;
+  padding: 3px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: all .2s ease-in-out;
+       -o-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+}
+
+.navLink {
+  text-decoration: none;
+}
+.navLink:visited {
+  text-decoration: none;
+}
+.navLink:hover{
+  color: #f98030;
+  text-decoration: underline;
+}
+
+.lightGradient {
+  font: 100%/1.5 "Roboto", Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-image: -webkit-linear-gradient(90deg, #f35525, #feab3a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
