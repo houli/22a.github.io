@@ -4,7 +4,9 @@ body {
   background-color: #f6f6f6;
   margin: 20px 20px;
   padding: 0px;
+  font: 100%/1.5 "Roboto", Verdana, sans-serif;
   font-size: 24px;
+  -webkit-font-smoothing: antialiased;
 }
 
 #wrap {
@@ -28,7 +30,7 @@ body {
 
 #content {
   overflow: hidden;
-  padding: 10px;
+  padding: 25px;
 }
 
 #profileImg {
@@ -42,6 +44,9 @@ body {
        -o-transition: all .2s ease-in-out;
           transition: all .2s ease-in-out;
 }
+#profileImg:hover {
+  background-color: #f98030;
+}
 
 .navLink {
   text-decoration: none;
@@ -50,13 +55,16 @@ body {
   text-decoration: none;
 }
 .navLink:hover{
-  color: #f98030;
-  text-decoration: underline;
+  border-bottom: 1px solid #f98030;
+  text-decoration: none;
+}
+
+.header {
+  font-size: 36px;
+  padding-left: 50px;
 }
 
 .lightGradient {
-  font: 100%/1.5 "Roboto", Verdana, sans-serif;
-  -webkit-font-smoothing: antialiased;
   background-image: -webkit-linear-gradient(90deg, #f35525, #feab3a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
