@@ -11,6 +11,11 @@ angular.module('meehan.controllers', [])
 .controller('ProjectsController', ['$scope', function($scope) {
 	//filler
 }])
-.controller('DateController', ['$scope', function($scope) {
-	$scope.date = new Date();
+.controller('DateController', ['$scope', '$filter', function($scope, $filter) {
+	today = new Date();
+	$scope.year = $filter("date")(today,'yyyy') - 1995;
+	if(($filter("date")(today,'M') < 4) || (($filter("date")(today,'M') === 4 )&&( $filter("date")(today,'d') < 13 )))
+	{
+		$scope.year = $scope.year - 1;
+	}
 }]);

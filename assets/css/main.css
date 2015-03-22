@@ -20,10 +20,11 @@ body {
 #navPanel {
   float: left;
   text-decoration: none;
-  width: 140px;
+  width: 136px;
   padding: 10px;
   background-color: #eee;
-  border-radius: 4px;
+  border-radius: 5px;
+  border: 1px solid #fff;
   -webkit-transition: all .2s ease-in-out;
        -o-transition: all .2s ease-in-out;
           transition: all .2s ease-in-out;
@@ -46,13 +47,13 @@ body {
           transition: all .2s ease-in-out;
 }
 #profileImg:hover {
-  background-color: #f98030;
+  background-color: #247FF2;
 }
 
 /* ________LINK CLASSES________ */
 .miscLink {
   text-decoration: none;
-  background-image: -webkit-linear-gradient(90deg, #247ff2, #97a5ff);
+  background-image: -webkit-linear-gradient(90deg, #F35525, #FEAB3A);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -60,18 +61,18 @@ body {
   text-decoration: none;
 }
 .miscLink:hover {
-  border-bottom: 1px solid #97a5ff;
+  border-bottom: 1px solid #f98030;
   text-decoration: none;
 }
 
 .navLink {
+  color: #247FF2;
   text-decoration: none;
 }
 .navLink:visited {
   text-decoration: none;
 }
-.navLink:hover{
-  border-bottom: 1px solid #f98030;
+.navLink:hover {
   text-decoration: none;
 }
 
@@ -82,7 +83,7 @@ body {
 }
 
 .lightGradient {
-  background-image: -webkit-linear-gradient(90deg, #f35525, #feab3a);
+  background-image: -webkit-linear-gradient(90deg, #247FF2, #97A5FF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
