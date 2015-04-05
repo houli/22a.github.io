@@ -3,8 +3,9 @@
   <head>
     <title>petermeehan</title>
     <base href="/">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
     <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
-    <link rel='stylesheet' type='text/css' href='/assets/css/roboto.css'>
     <link rel="stylesheet" type='text/css' href="/assets/css/animate.css">
     <link rel="shortcut icon" type="image/x-icon" href="/assets/icon/pm.ico">
     <script type="text/javascript" src="assets/js/frameworks/jquery-2.1.3.min.js"></script>
@@ -25,11 +26,11 @@
   <body>
     <div id="wrap">
     	<div id="navPanel">
-        <a ng-href="/" class="profileLink"><img id="profileImg" src="/assets/img/australia.png"/></a><br>
+        <a ng-href="/" class="profileLink"><img id="profileImg" src="/assets/img/australia.png"/></a>
         <div id="navRoutes">
-          <a ng-href="/about" class="navLink">About</a><br>   
-          <a ng-href="/links" class="navLink">Links</a><br>
-          <a ng-href="/projects" class="navLink">Projects</a>
+          <div><a ng-href="/about" class="navLink">About</a></div>
+          <div><a ng-href="/links" class="navLink">Links</a></div>
+          <div><a ng-href="/projects" class="navLink">Projects</a></div>
         </div>
       </div>
       <div id="content" ng-view></div>
