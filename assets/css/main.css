@@ -104,14 +104,43 @@ body {
   border-bottom-left-radius: 2px;
 }
 
-  #selDiv {
-    padding-bottom: 75px;
-  }
+#selDiv {
+  padding-bottom: 75px;
+}
 
-  #contCl {
-    clear: left;
-  }
+#contCl {
+  clear: left;
+}
 
+.grayscale img
+{
+  float: left;
+  width: 64px;
+  padding: 20px;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+  -o-filter: grayscale(1);
+  -ms-filter: grayscale(1);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.grayscale img:hover
+{
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+  -moz-filter: grayscale(0);
+  -o-filter: grayscale(0);
+  -ms-filter: grayscale(0);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
 
 /* ________LINK CLASSES________ */
 .miscLink {
