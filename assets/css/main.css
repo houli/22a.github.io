@@ -23,13 +23,14 @@ body {
 }
 
 #navPanel {
+  vertical-align:middle;
   float: left;
   text-decoration: none;
   width: 136px;
   padding: 10px;
-  background-color: #eee;
+  background-color: #efefef;
   border-radius: 5px;
-  border: 1px solid #fff;
+  border: 1px solid #ebebeb;
   -webkit-transition: all .2s ease-in-out;
        -o-transition: all .2s ease-in-out;
           transition: all .2s ease-in-out;
@@ -38,7 +39,9 @@ body {
 #content {
   overflow: hidden;
   padding: 25px;
+  text-align: center;
 }
+
 
 #profileImg {
   height: 128px;
@@ -57,7 +60,6 @@ body {
 
 .header {
   font-size: 36px;
-  padding-left: 50px;
   padding-bottom: 20px;
 }
 
@@ -112,6 +114,10 @@ body {
   clear: left;
 }
 
+.grayscale {
+  display: inline-block;
+  vertical-align: middle;
+}
 .grayscale img
 {
   float: left;
@@ -186,10 +192,8 @@ body {
   #wrap {
     width: 100%;
   }
-  #content {
-    text-align: center;
-  }
   .header {
+    padding-left: 50px;
     text-align: left;
   }
 }
@@ -215,11 +219,17 @@ body {
   #wrap {
     width: 100%;
   }
-/*  #content {
-    text-align: center;
-  }*/
   .header {
     text-align: center;
+  }
+  .grayscale img
+  {
+    display: inline-block;
+    vertical-align: middle;
+    left: auto;
+    right: auto;
+    width: 128px;
+    padding: 30px;
   }
   #navPanel{
     clear: all;
