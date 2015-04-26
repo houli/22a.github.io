@@ -107,7 +107,10 @@ body {
 }
 
 #selDiv {
-  padding-bottom: 75px;
+  padding-bottom: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  min-width: 260px;
 }
 
 #contCl {
@@ -192,10 +195,6 @@ body {
   #wrap {
     width: 100%;
   }
-  .header {
-    padding-left: 50px;
-    text-align: left;
-  }
 }
 @media (max-width: 768px),
       screen and (device-width: 360px) /*nexus5 or any 1080x1920*/
@@ -263,35 +262,5 @@ body {
 
   .header {
     padding-left: 0px;
-  }
-
-  #selDiv {
-    width: 30%;
-    margin:0 auto;
-  }
-}
-@media (max-width: 767px) {
-    #selDiv {
-    width: 50%;
-  }
-}
-@media (max-width: 615px) {
-    #selDiv {
-    width: 60%;
-  }
-}
-@media (max-width: 530px) {
-    #selDiv {
-    width: 70%;
-  }
-}
-@media (max-width: 476px) {
-    #selDiv {
-    width: 80%;
-  }
-}
-@media (max-width: 440px) {
-    #selDiv {
-    width: 100%;
   }
 }
