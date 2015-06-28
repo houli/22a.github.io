@@ -14,9 +14,9 @@ body {
   background-color: #f6f6f6;
   font: 100%/1.5 "Roboto", Verdana, sans-serif;
   font-size: 24px;
-  font-size: 3vh;
+  font-size: 1.5vw;
   -webkit-font-smoothing: antialiased;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 
@@ -31,6 +31,9 @@ body {
   background-color: #efefef;
   box-shadow: 0px 0px 2px #888;
   text-align: center;
+  -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
 }
 
 .profileImg {
@@ -58,22 +61,33 @@ body {
     -o-transition: all .2s ease-in-out;
       transition: all .2s ease-in-out;
 }
-.navLink :hover {
-  text-shadow: 0px 0px 1px #79aff2;
-}
 .navLink a {
   color: #247FF2;
   text-decoration: none;
+  -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
+}
+.navLink :hover {
+/*  color: #fff;
+  background-color: #247FF2;
+  border-radius: 0.2vw;
+  padding: 0.2vh;*/
+  font-size: 1.8vw;
+
 }
 
 
 /* ________PAGE CONTENT________ */
 .content {
-  width: 75vw;
+  width: 65vw;
   margin-left: 25vw;
   height: 100vh;
   overflow: visible;
   text-align: center;
+  -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
 }
 
 .header {
@@ -93,21 +107,20 @@ body {
 }
 .selectRadio {
   float: left;
-  padding-left: 15px;
-  padding-top: 7px;
+  padding-left: 2vw;
+  margin-top: 1vw;
 }
 .aboutContent {
   clear: left;
 }
 
-
-
-
-
-
+.spacer {
+  padding-top: 2vh;
+}
 
 .select {
-  padding: 5px;
+  padding: 0.5vw;
+  font-size: 2vw;
   border: 1px solid #247FF2;
   background-color: #fff;
   -webkit-transition: all 0.1s ease-in-out;
@@ -154,8 +167,10 @@ body {
 .grayscale img
 {
   float: left;
-  width: 64px;
-  padding: 20px;
+  width: 5.5vw;
+  padding: 1vw;
+  padding-top: 0px;
+  padding-bottom: 2vh;
   filter: grayscale(1);
   -webkit-filter: grayscale(1);
   -moz-filter: grayscale(1);

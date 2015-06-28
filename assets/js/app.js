@@ -12,9 +12,9 @@ angular.module('meehan', [
     templateUrl: '/assets/templates/about.html',
     controller: 'AboutController'
   })
-  .when('/links', {
-    templateUrl: '/assets/templates/links.html',
-    controller: 'LinksController'
+  .when('/contact', {
+    templateUrl: '/assets/templates/contact.html',
+    controller: 'ContactController'
   })
   .when('/projects', {
 	templateUrl: '/assets/templates/projects.html',

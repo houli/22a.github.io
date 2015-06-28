@@ -9,7 +9,7 @@ angular.module('meehan.controllers', [])
 		$scope.left = bool;
 	};
 }])
-.controller('LinksController', ['$scope', function($scope) {
+.controller('ContactController', ['$scope', function($scope) {
 	//filler
 }])
 .controller('ProjectsController', ['$scope', function($scope) {
