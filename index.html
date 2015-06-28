@@ -6,34 +6,21 @@
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="utf-8" http-equiv="encoding">
     <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
-    <link rel="stylesheet" type='text/css' href="/assets/css/animate.css">
     <link rel="shortcut icon" type="image/x-icon" href="/assets/icon/pm.ico">
-    <script type="text/javascript" src="assets/js/frameworks/jquery-2.1.3.min.js"></script>
     <script type="text/javascript" src="assets/js/frameworks/angular.min.js"></script>
     <script type="text/javascript" src="assets/js/frameworks/angular-route.min.js"></script>
     <script type="text/javascript" src="assets/js/app.js"></script>
     <script type="text/javascript" src="assets/js/controllers.js"></script>
-    <script type="text/javascript">
-      $(function() {
-        $(".navLink").hover(function(){
-          $(this).addClass('animated flipInY');
-        },function(){
-          $(this).removeClass('animated flipInY');
-        });
-      });
-    </script>
   </head>
   <body>
-    <div id="wrap">
-    	<div id="navPanel">
-        <a ng-href="/" class="profileLink"><img id="profileImg" src="/assets/img/australia.png"/></a>
-        <div id="navRoutes">
-          <div class="mobRight"><a ng-href="/about" class="navLink">About</a></div>
-          <div class="mobRight"><a ng-href="/links" class="navLink">Links</a></div>
-          <div class="mobRight"><a ng-href="/projects" class="navLink">Projects</a></div>
-        </div>
+    <div class="navPanel">
+      <a ng-href="/"><img class="profileImg" src="/assets/img/australia.png"/></a>
+      <div class="navRoutes">
+        <div class="navLink"><a ng-href="/about">About</a></div>
+        <div class="navLink"><a ng-href="/links">Links</a></div>
+        <div class="navLink"><a ng-href="/projects">Projects</a></div>
       </div>
-      <div id="content" ng-view></div>
     </div>
-  </body>
+    <div class="content" ng-view></div>
+  </div>
 </html>

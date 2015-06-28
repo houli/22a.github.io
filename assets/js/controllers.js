@@ -3,7 +3,11 @@ angular.module('meehan.controllers', [])
 	//filler
 }])
 .controller('AboutController', ['$scope', function($scope) {
-	//filler
+	$scope.left = true;
+
+	$scope.switch = function(bool) {
+		$scope.left = bool;
+	};
 }])
 .controller('LinksController', ['$scope', function($scope) {
 	//filler

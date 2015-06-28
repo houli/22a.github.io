@@ -1,35 +1,18 @@
-<script type="text/javascript">
-  $(function() {
-    $("#aboutSite").hide();
-    $("#selLeft").click(function(){
-      $(this).addClass('selected');
-      $("#selRight").removeClass('selected');
-      $("#aboutMe").show();
-      $("#aboutSite").hide();
-    });
-    $("#selRight").click(function(){
-      $(this).addClass('selected');
-      $("#selLeft").removeClass('selected');
-      $("#aboutMe").hide();
-      $("#aboutSite").show();
-    });
-  });
-</script>
-<div id="selDiv">
-  <div style="float: left;">
-  	<span class="header lightGradient">About</span>
+<div class="selDiv">
+  <div class="selectLabel">
+    <span class="header lightGradient">About</span>
   </div>
-  <div style="float: left; padding-left: 15px; padding-top: 7px;">
-  	<span id="selLeft" class="select left selected">Me</span><span id="selRight" class="select right">This Site</span>
+  <div class="selectRadio">
+  <span class="select left" ng-class="{'selected':left}" ng-click="switch(true)">Me</span><span class="select right" ng-class="{'selected':!left}" ng-click="switch(false)">This Site</span>
   </div>
 </div>
 
-<div id="contCl">
-  <span id="aboutMe">
-  	My name is <span ng-controller="DateController">{{year}}</span> and I'm Peter years old. I study Computer Science at <a class="miscLink" target="_blank" href="http://www.tcd.ie">Trinity</a><a class="miscLink" target="_blank" href="http://www.tcd.ie"> College</a><a class="miscLink" target="_blank" href="http://www.tcd.ie"> Dublin</a>. I'm proficient in a handful of OO and scripting languages. I like messing with things in my free time; as of recent I've been developing some exciting web applications using modern js frameworks. I'm currently working on a few very interesting projects with some of the great people over at <a class="miscLink" target="_blank" href="http://www.ducss.ie">ducss</a>. For a more "professional" spiel have a look at my LinkedIn.
+<div class="aboutContent">
+  <span ng-hide="!left">
+    My name is <span ng-controller="DateController">{{year}}</span> and I'm Peter years old. I study Computer Science at <a class="miscLink" target="_blank" href="http://www.tcd.ie">Trinity College Dublin</a>. I'm proficient in a handful of OO and scripting languages. I like messing with things in my free time; as of recent I've been developing some exciting web applications using modern js frameworks. I'm currently working on a few very interesting projects with some of the great people over at <a class="miscLink" target="_blank" href="http://www.ducss.ie">ducss</a>. For a more "professional" spiel have a look at my LinkedIn.
   </span>
 
-  <span id="aboutSite">
-  	This site is built using Angular.js, a sprinkle of jQuery, and some lovely <a class="miscLink" target="_blank" href="http://daneden.github.io/animate.css/">css animations</a>. It's really just an excuse for me to play around with angular. Some of the techniques used here are attrocious, namely my solution to the direct routing problem I was having with angular's html5 routing. Feel free to view the <a target="_blank" class="miscLink" href="https://github.com/22a/22a.github.io">page source</a>.
+  <span ng-hide="left">
+    This site is built using Angular.js. It's really just an excuse for me to play mess around with webdev and different hosting platforms. Some of the techniques used here are attrocious, namely my solution to the direct routing problem I was having with angular's html5 routing. Feel free to view the <a target="_blank" class="miscLink" href="https://github.com/22a/22a.github.io">page source</a>.
   </span>
 </div>
